@@ -1,0 +1,8 @@
+<p>point-list works!</p>
+
+<ol>
+  <li *ngFor="let point of points$ | async">
+    <input type="number" name="value" [(ngModel)]="point.value" />
+    <pre><code>{{ point | json }}</code></pre>
+  </li>
+</ol>
